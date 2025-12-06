@@ -1,26 +1,16 @@
-package com.rohit.inventory_service.model;
+package com.rohit.inventory_service.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-@Entity
-@Table(name = "inventory")
-public class Inventory {
+public class InventoryResponseDTO {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id; 
+	private Long id;
 	private String skuCode;
 	private Integer quantity;
 	
-	public Inventory() {
+	public InventoryResponseDTO() {
 		super();
 	}
 
-	public Inventory(Long id, String skuCode, Integer quantity) {
+	public InventoryResponseDTO(Long id, String skuCode, Integer quantity) {
 		super();
 		this.id = id;
 		this.skuCode = skuCode;
