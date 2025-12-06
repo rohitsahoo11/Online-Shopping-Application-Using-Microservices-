@@ -1,0 +1,1 @@
+CREATE DATABASE online_shopping_order_service_db;
