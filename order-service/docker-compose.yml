@@ -9,6 +9,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: rohit11
       POSTGRES_DB: online_shopping_order_service_db
+      TZ: Asia/Kolkata
     ports:
       - "5434:5432"
     volumes:
